@@ -1,5 +1,5 @@
 ## Diagrama:
-
+```plantuml
 @startuml
 
 [*] --> StandBy
@@ -29,7 +29,7 @@ MenuTransacciones --> FinalizarSesion : Cancelar
 FinalizarSesion --> StandBy : Sesión finalizada
 TarjetaRetenida --> StandBy : Tarjeta retenida
 @enduml
-
+```
 -------------
 ## Explicacion de la interpretacion del diagrama
 - StandBy: Es el estado inicial del cajero, donde el sistema está en esperando a que le introduzcan una tarjeta. Cuando se introduce, pasa al estado VAlidarTarjeta
